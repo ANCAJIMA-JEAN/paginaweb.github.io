@@ -1,0 +1,156 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor-padre{
+  margin-top: 30px;
+}
+.APSTI{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-left: 10px solid red;
+  padding-left: 10px;
+  max-width: 520px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+  height: 30%;
+}
+.imagenes{
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+img{
+  width: 100%;
+}
+img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.marco{
+  background: linear-gradient(135deg, #70f570 , #49c628 );
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px ;
+  margin-right: 5px;
+  color:white;
+}
+.marco1{
+  color:white;
+  background: linear-gradient(135deg, #f57070 , #c62828);
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px ;
+  margin-right: 5px;
+}
+.marco2{
+  color:white;
+  background: linear-gradient(135deg, #70f5f5 , #28c6be );
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px ;
+  margin-right: 5px;
+}
+.marco3{
+  color:white;
+  background: linear-gradient(135deg, #f5f370 , #c6c328 );
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px ;
+  margin-right: 5px;
+}
+.dropbtn{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+}
+.subconteiner{
+  display: flex;
+  align-items: center;
+}
+.carta1 {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: "Poppins", sans-serif;
+  }
+  span{
+    font-weight: bold;
+  }
+  .carta1-content {
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: all 0.5s ease; /* Cambia la duración a tu preferencia */
+    transform: scaleY(); /* Inicialmente, el contenido está colapsado */
+    transform-origin: top; /* El contenido se expande desde la parte superior */
+    font-size: 15px;
+}
+
+  
+  .carta1.active .carta1-content {
+    display: block;
+    transform: scaleY(1); /* Cuando está activo, el contenido se expande */
+  }
+  
+  .carta1.active .dropbtn:after {
+    content: ' ▲';
+  }
+  
+  .carta1 .dropbtn:after {
+    font-size: 25px;
+    position: absolute;
+    left: auto;
+    right: 5px;
+    color: rgb(0, 0, 0);
+    content: ' ▼';
+  }
+  
+  .carta1-content p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carta1-content p:before {
+    content: '✔ ';
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .imagenes {
+      width: 100%;
+    }
+  
+    .carta1 {
+      width: 90%;
+      max-width: 500px;
+      margin: 10px 0;
+    }
+    
+    .carta1 .dropbtn:after {
+      right: 10px;
+    }
+    
+    .APSTI {
+      margin-left: 10px;
+      max-width: 90%;
+    }
+  }

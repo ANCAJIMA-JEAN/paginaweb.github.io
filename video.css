@@ -1,0 +1,43 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+.video{
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sub-video{
+    width: 63%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-left: 10px solid rgb(255, 0, 0);
+}
+iframe{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilos base para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .sub-video {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      padding: 10px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      border-left: none;
+    }
+    
+    .video {
+      margin-top: 20px;
+    }
+    
+    iframe {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }

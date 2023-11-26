@@ -1,0 +1,30 @@
+.noticias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 18rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 45%;
+    }
+  
+    .more-news {
+      display: block; /* Mostrar el botón en dispositivos móviles */
+      text-align: center;
+    }
+  }
+  
+  /* Ocultar el botón en dispositivos más grandes */
+  @media only screen and (min-width: 769px) {
+    .more-news {
+      display: none;
+    }
+  }
+  
